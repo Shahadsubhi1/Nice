@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neumorphic Clothing Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Neumorphic Design Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  background-color: #FADCE1;
+}
+
+
+    .logo img {
+      max-width: 200px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+	  
+    }
+
+    nav ul li a {
+      color: #555;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #333;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+
+    .product-card {
+      background-color: #f0f0f0;
+      border-radius: 20px;
+      box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .add-to-cart {
+      display: block;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #45a049;
+    }
+	
+	
+    .footer-upper {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      background-color: #E6E6E6;
+      border-radius: 20px;
+    }
+
+    .footer-lower {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #000000;
+      border-radius: 20px;
+      color: #ffffff;
+    }
+
+    .footer-lower p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+	
+      <a href="index.html"><img src="Logo.jpg" alt="Neumorphic Clothing Store"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="men.html">Men's Clothing</a></li>
+        <li><a href="women.html">Women's Clothing</a></li>
+		<li><a href="children.html">Children Clothing</a></li>
+		<li><a href="accessories.html">Accsessories</a></li>
+		<li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+        <li><a href="user.html"><i class="fas fa-user"></i></a></li>
+   </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="product-grid">
+      <div class="product-card">
+        <a href="product1.html">
+          <img src="classic.jpg" alt="Classic T-Shirt" class="product-image">
+          <div class="product-details">
+            <h3 class="product-name">Classic T-Shirt</h3>
+            <p class="product-price">$19.99</p>
+            <a href="#" class="add-to-cart">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="product2.html">
+          <img src="Skkinyj.jpg" alt="Skinny Jeans" class="product-image">
+          <div class="product-details">
+            <h3 class="product-name">Skinny Jeans</h3>
+            <p class="product-price">$39.99</p>
+            <a href="#" class="add-to-cart">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="product3.html">
+          <img src="floraldress.jpg" alt="Floral Dress" class="product-image">
+          <div class="product-details">
+            <h3 class="product-name">Floral Dress</h3>
+            <p class="product-price">$49.99</p>
+            <a href="#" class="add-to-cart">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="product4.html">
+          <img src="runningShose.png" alt="Running Shoes" class="product-image">
+          <div class="product-details">
+            <h3 class="product-name">Running Shoes</h3>
+            <p class="product-price">$59.99</p>
+            <a href="#" class="add-to-cart">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+
+      <!-- Add more product cards here -->
+
+    </div>
+  </div>
+
+  <div class="footer-upper">
+    <div class="container">
+      <p>
+        <a href="Return,Refund,andShippingPolicy.html">Return, Refund, and Shipping Poicy</a> | 
+        <a href="contact.html">Contact us</a> |
+		<a href="size.html">Cloting Size</a>
+		</p>
+    </div>
+  
+
+  <div class="footer-lower">
+    <div class="container">
+      <p>&copy; 2023 Neumorphic Clothing Store. All rights reserved.</p>
+    </div>
+	</div>
+</body>
+</html>
